@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!-- Snippet -->
+        <template id="s_snippet_carousel" name="My Carousel Snippet">
+                <section class="s_snippet_carousel" data-name="My Carousel Snippet" data-snippet="my_carousel_snippet">
+                <p>Our custom snippet</p>
+            </section>
+        </template>
+
+        <!-- Add snipet to website builder's right panel -->
+        <template id="custom_responsive_snippets" inherit_id="website.snippets" name="Custom Snippets">
+            <xpath expr="//div[@id='snippet_structure']/div[@class='o_panel_body']" position="inside">
+                <t t-snippet="carousel_snippet.s_snippet_carousel"/>
+            </xpath>
+        </template>
+    </data>
+</odoo>
