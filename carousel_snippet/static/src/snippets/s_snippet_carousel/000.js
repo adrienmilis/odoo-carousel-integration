@@ -9,6 +9,7 @@ publicWidget.registry.MyCarousel = publicWidget.Widget.extend({
      * @override
      */
     init() {
+        // Initialize the slider (see github doc)
         tns({
             mode: 'carousel', // or 'gallery'
             mouseDrag: true,
