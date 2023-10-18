@@ -29,11 +29,9 @@
     ],
     'assets': {
         'web.assets_frontend': [
-            # 'carousel_snippet/static/src/snippets/s_snippet_carousel/000.js',
-            # 'carousel_snippet/static/src/snippets/s_snippet_carousel/000.scss',
-            # 'carousel_snippet/static/src/snippets/s_snippet_carousel/000.xml',
-            # 'carousel_snippet/static/src/snippets/s_snippet_carousel/option.js',
-            # 'carousel_snippet/static/src/snippets/options.scss',
+            'carousel_snippet/static/src/snippets/s_snippet_carousel/*',
+            'https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js',
+            'https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css',
         ],
     }
 }

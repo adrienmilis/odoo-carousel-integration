@@ -3,14 +3,45 @@
     <data>
         <!-- Snippet -->
         <template id="s_snippet_carousel" name="My Carousel Snippet">
-                <section class="s_snippet_carousel" data-name="My Carousel Snippet" data-snippet="my_carousel_snippet">
-                <p>Our custom snippet</p>
+            <section class="s_snippet_carousel" data-name="My Carousel Snippet" data-snippet="my_carousel_snippet">
+                <main class="container">
+                    <header>
+                      <h2>tiny-slider.js 2.9.4 basic starter</h2>
+                      <p><a href="https://github.com/ganlanyuan/tiny-slider" target="_blank">Tiny-Slider Github</a></p>
+                    </header>
+                    <!-- tiny slider custom controls (by id) -->
+                    <div id="custom_controlsContainer">
+                      <i id="prev" class="fa fa-arrow-left material-icons left"/>
+                      <i id="next" class="fa fa-arrow-right material-icons right"/>
+                    </div>
+                    <br/>
+                    <!-- tiny slider -->
+                    <ul class="slider">
+                      <li>
+                        <img class="tns-lazy" src="https://picsum.photos/500/220"/>
+                        <p>1</p>
+                      </li>
+                      <li>
+                        <img class="tns-lazy" src="https://picsum.photos/501/220"/>
+                        <p>2</p>
+                      </li>
+                      <li>
+                        <img class="tns-lazy" src="https://picsum.photos/503/220"/>
+                        <p>3</p>
+                      </li>
+                      <li>
+                        <img class="tns-lazy" src="https://picsum.photos/504/220"/>
+                        <p>4</p>
+                      </li>
+                    </ul>
+                  </main>
+
             </section>
         </template>
 
         <!-- Add snipet to website builder's right panel -->
         <template id="custom_responsive_snippets" inherit_id="website.snippets" name="Custom Snippets">
-            <xpath expr="//div[@id='snippet_structure']/div[@class='o_panel_body']" position="inside">
+            <xpath expr="//div[@id='snippet_structure']/div[hasclass('o_panel_body')]" position="inside">
                 <t t-snippet="carousel_snippet.s_snippet_carousel"/>
             </xpath>
         </template>
