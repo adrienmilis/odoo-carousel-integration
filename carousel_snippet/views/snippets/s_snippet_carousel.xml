@@ -10,9 +10,9 @@
                       <p><a href="https://github.com/ganlanyuan/tiny-slider" target="_blank">Tiny-Slider Github</a></p>
                     </header>
                     <!-- tiny slider custom controls (by id) -->
-                    <div id="custom_controlsContainer">
-                      <i id="prev" class="fa fa-arrow-left material-icons left"/>
-                      <i id="next" class="fa fa-arrow-right material-icons right"/>
+                    <div class="custom_controlsContainer">
+                      <i class="prev fa fa-arrow-left material-icons left"/>
+                      <i class="next fa fa-arrow-right material-icons right"/>
                     </div>
                     <br/>
                     <!-- tiny slider -->

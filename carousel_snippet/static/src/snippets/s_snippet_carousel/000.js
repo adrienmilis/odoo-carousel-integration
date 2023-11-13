@@ -16,23 +16,23 @@ publicWidget.registry.MyCarousel = publicWidget.Widget.extend({
             mouseDrag: true,
             navPosition: "bottom",
             gutter: 10,
-            controlsContainer: "#custom_controlsContainer",
-            nextButton: '#prev',
-            nextButton: '#next', // String selector
+            controlsContainer: ".custom_controlsContainer",
+            nextButton: '.prev',
+            nextButton: '.next', // String selector
             arrowKeys: true, // keyboard support
             lazyload: false,
             lazyloadSelector: ".tns-lazy",
             responsive: {
-              "350": {
-                "items": 1,
-                "controls": true,
-                "edgePadding": 30
-              },
-              "500": {
-                "items": 3
-              }
+                "350": {
+                    "items": 1,
+                    "controls": true,
+                    "edgePadding": 30
+                },
+                "500": {
+                    "items": 3
+                }
             },
-          });
+        });
     }
 });
 
